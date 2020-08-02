@@ -4,11 +4,11 @@ class BlogsController < ApplicationController
   end
 
   def index
-    @blogs = Blogs.all
+    @blogs = Blog.all
   end
 
   def new
-  	@blog = Blog.new
+  	@blogs = Blog.new
   end
 
   def create
