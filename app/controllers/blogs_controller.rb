@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
   
   def destroy
     blog = Blog.find(params[:id])
-    blog.destrooy
+    blog.destroy
     redirect_to blogs_path
   end
 
